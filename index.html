@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Shop - Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img  class="logo" src="img/Click Shop Black N.png" alt="">
+        <form action="submit">
+            <div class="container_inputs">
+                <label for="nome">Nome: </label>
+                <div>
+                    <img src="img/icon-user-black.png" alt="">
+                    <input  placeholder="Digite o teu nome: "id="nome" type="text">
+                </div>
+            </div>
+
+            <div class="container_inputs">
+                <label for="email">Email: </label>
+                <div>
+                    <img src="img/icon-user-black.png" alt="">
+                    <input placeholder="Digite o teu email: " id="email" type="email">
+                </div>
+            </div>
+
+            <div class="container_inputs">
+                <label for="password">Password: </label>
+                <div>
+                    <img src="img/icon-password-black.png" alt="">
+                    <input  placeholder="Digite o tua password: "id="password" type="password">
+                </div>
+            </div>
+
+            <button id="btn_cadastrar" type="submit">Cadastrar</button>
+            <span>Já tem uma Conta? <strong><a href="./">Faça Login</a></strong></span>
+        </form>
+    </div>
+
+    <div class="msg_login">
+        <div class="top">
+            <img id="js-res-image" src="" alt="">
+            <h4 id="js-principal-text"></h4>
+        </div>
+        <div class="text">
+            <span id="js-second-text"></span>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+.container{
+    max-width: 30rem;
+    box-shadow: 4px 3px 2px rgba(1, 1, 1, 0.589);
+    padding: 2rem 3rem; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.logo{
+    max-width: 10rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.container_inputs img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.container_inputs{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    max-width: 20rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.container_inputs div{
+    display: flex;
+}
+
+.container_inputs div input{
+    border: none;
+    width: 20rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+form button{
+    border: none;
+    background-color: rgb(7, 7, 80);
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 5px; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;   
+    cursor: pointer;
+    transition: all .3s;
+}
+
+form button:hover{
+    background-color: rgb(179, 179, 179);
+    color: black;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.603);
+    font-weight: 500;
+}
+
+form span{
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.msg_login{
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(1, 1, 1, 0.603);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    
+}
+
+.msg_login.active{
+    display: flex;
+    animation: fadeIn .5s forwards;
+}
+
+.msg_login .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg_login .top img{
+    max-width: 17px;
+    margin-right: 5px;
+}
+
+.msg_login .text span{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(20px);
+    }
+    66%{
+
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
